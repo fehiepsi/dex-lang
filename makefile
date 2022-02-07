@@ -39,8 +39,8 @@ CFLAGS := $(CFLAGS) -I/usr/local/cuda/include -DDEX_CUDA
 endif
 
 # libpng
-ifneq (,$(wildcard /usr/local/include/png.h))
-CFLAGS := $(CFLAGS) -I/usr/local/include
+ifneq (,$(wildcard /usr/include/libpng/png.h))
+CFLAGS := $(CFLAGS) -I/usr/include/libpng
 endif
 
 ifneq (,$(PREFIX))
